@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery apk</title>
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Image Gallery</h2>
+    <h4>Resize the browser window to see the effect.</h4>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://cdn.baogiaothong.vn/files/Baogiay/2017/06/28/080739-20.jpg">
+                <img src="https://cdn.baogiaothong.vn/files/Baogiay/2017/06/28/080739-20.jpg" alt="bumble bee" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://film-book.com/wp-content/uploads/2015/10/optimus-prime-grimlock-transformers-age-of-extinction-01-600x350.jpg">
+                <img src="https://film-book.com/wp-content/uploads/2015/10/optimus-prime-grimlock-transformers-age-of-extinction-01-600x350.jpg" alt="Optimus Price" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://znews-photo.zingcdn.me/w660/Uploaded/xbhunku/2018_01_23/c3c899eac59fa6b2b6beb4e29033e3c1d4b17d55.jpg">
+                <img src="https://znews-photo.zingcdn.me/w660/Uploaded/xbhunku/2018_01_23/c3c899eac59fa6b2b6beb4e29033e3c1d4b17d55.jpg" alt="Trolltunga Norway" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://johnrieber.files.wordpress.com/2017/06/transformers-the-last-knight-box-office-bomb.jpg?w=640">
+                <img src="https://johnrieber.files.wordpress.com/2017/06/transformers-the-last-knight-box-office-bomb.jpg?w=640" alt="Trolltunga Norway" width="300" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+</body>
+
+</html>
